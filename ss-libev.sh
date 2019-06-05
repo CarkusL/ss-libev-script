@@ -39,6 +39,6 @@ cp ss-libev /etc/init.d/
 chmod +x /etc/init.d/ss-libev
 update-rc.d /etc/init.d/ss-libev defaults
 
-echo "Modefy config.json and then move it to /etc/shadowsocks/config.json"
+echo "Modfiy config.json and then move it to /etc/shadowsocks/config.json"
 echo "then run "/etc/init.d/ss-libev start" to start"
 

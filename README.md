@@ -1,24 +1,19 @@
-# ss-libev-script
-a script for install ss-libev
+# SS-libev Script
+A script for install ss-libev
 
-## step 1 install ss-libev
+## step 1 Install ss-libev
 ```chmod +x ss-libev.sh```
 
 ```./ss-libev.sh```
 
-## step 2 modefy config.json
+## step 2 Modfiy config.json
 
 ```vim config.json```
 
-## step 3
+## step 3 Install BBR
 
 ```chmod +x BBR.sh```
 
-```chmod +x BBR_POWERED.sh```
-
 ```./BBR.sh```
 
-reboot
-
-```./BBR_POWERED.sh```
- 
+reboot 
