@@ -30,7 +30,7 @@ do_start(){
         echo "$NAME (pid $PID)正在运行"
         exit 0
     else
-        /usr/local/bin/ss-manager -c $CONF -u
+        /usr/local/bin/ss-manager -c $CONF -u > /root/ss-log.txt &
         RETVAL=$?
         if [ $RETVAL -eq 0 ]; then
             echo "$NAME启动成功"
@@ -67,7 +67,7 @@ do_status(){
     if [ $? -eq 0 ]; then
         echo "$NAME (pid $PID)正在运行"
     else
-        echo "$NAME未运行。可以执行/etc/init.d/ss-libev start启动ss"
+        echo "$NAME未运行。可以执行/etc/init.d/ss-fly start启动ss"
         RETVAL=1
     fi
 }
